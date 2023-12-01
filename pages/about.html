@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>About</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<!-- Main content -->
+
+<body>
+	<!-- nav menu -->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<img id="logo-container" href="/index.html" class="brand-logo" src="/media/logo.png"></img>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="/index.html" class="black-text">Home</a></li>
+				<li><a href="/pages/thesis.html" class="black-text">Thesis</a></li>
+				<li><a href="/pages/project.html" class="black-text">Project</a></li>
+				<li><a href="/pages/about.html" class="black-text">About</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="sidenav">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/pages/thesis.html">Thesis</a></li>
+				<li><a href="/pages/project.html">Project</a></li>
+				<li><a href="/pages/about.html">About</a></li>
+			</ul>
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
+					class="material-icons light-blue-text">menu</i></a>
+		</div>
+	</nav>
+
+	<!--header element-->
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br><br>
+				<h1 class="header center white-text text-lighten-2">About</h1>
+			</div>
+		</div>
+		<div class="parallax"><img src="/media/Bild1.png" alt=""></div>
+	</div>
+
+
+	<!-- Abschnitt -->
+
+	<div class="container">
+		<div class="section">
+			<div class="col s12 m12">
+				<h3 class="mdi-content-send black-text text-darken-3 center">This is me 🙌</h3>
+
+			</div>
+
+			<div class="col s12 m12">
+				<div class="image-block center">
+					<img src="/media/melissa.jpg" alt="">
+				</div>
+			</div>
+
+
+
+			<div class="accordeon col s12 m12">
+
+				<ul class="collapsible popout">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">face</i>Über mich</div>
+						<div class="collapsible-body">
+							<p class="left-align light">Ich studiere im letzten Jahr Multimedia Production an der Fachhochschule Graubünden. Ich interessiere mich sehr für Sprachen und Kultur, was auch mit meinem journalistischen Hintergrund zusammenhängt.</p></span>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">school</i>FHGR</div>
+						<div class="collapsible-body"><span>Als agile Hochschule setzt die FH Graubünden auf dynamisches Denken und proaktives Handeln. Mit diesem Mindset gestaltet sie nachhaltig die Zukunft mit. 
+							Studium und Forschung sind interdisziplinär und orientieren sich an praktischen Herausforderungen in Wirtschaft und Gesellschaft. Ihre über 2300 Studierenden bildet sie zu hochqualifizierten und verantwortungsvollen Persönlichkeiten aus.</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">newspaper</i>Bachelorarbeit</div>
+						<div class="collapsible-body"><span>Im letzten Semester des Studiengangs Multimedia Production wird die Bachelor Thesis ausgearbeitet. 
+							Sie befasst sich mit einer praktischen oder theoretischen Fragestellung, die im Auftrag einer Organisation oder im Rahmen eines Forschungsprojekts bearbeitet wird.</span></div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<!--Footer -->
+
+	<footer class="page-footer cyan darken-4">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Kontaktangaben</h5>
+					<p class="white-text">melissa.stuessi@stud.fhgr.ch</p>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container center">
+				© <a class="white-text">Melissa Stüssi</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="/js/materialize.js"></script>
+	<script src="/js/init.js"></script>
+	<script src="/js/turn.js"></script>
+
+	<script>
+
+		$(document).ready(function () {
+			$('.collapsible').collapsible();
+		});
+
+	</script>
+
+
+
+</body>
+
+</html>
