@@ -2,23 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@600&family=Oswald&display=swap');
 
 
-nav ul img,
+/* Header */
+nav {
+  padding-bottom: .5vh;
+}
 nav .brand-logo {
-  height: 6vh;
-  width: auto;
-  margin:1vh 0;
-  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-logo img {
+  height: 80%;
 }
 
-  .nav-wrapper container {
+
+.nav-wrapper container {
     width: auto; /* Die Breite automatisch anpassen, um das Seitenverhältnis zu bewahren */
     height: 50px; /* Setze die gewünschte Höhe */
 }
 
-
-p {
-  line-height: 2rem;
-}
 
 .sidenav-trigger {
   color: #26a69a;
@@ -42,31 +45,28 @@ p {
   /*overflow: hidden;*/
 }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
 
 .icon-block {
   padding: 0 15px;
 }
-
 .icon-block .material-icons {
   font-size: inherit;
 }
-
+.icon-block .material-icons {
+  width: 100%;
+  margin-top: 2vh;
+  text-align: center;
+  font-size: x-large;
+  color: #03A9F4;
+}
+.icon-block h3 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 1.0933333333rem 0 0.656rem 0;
+}
+.icon-block p {
+  text-align: justify;
+}
 
 
 footer.page-footer {
@@ -95,14 +95,18 @@ h4 {
 body,
 p {
   font-family: 'roboto', sans-serif;
-  margin-top: 2.5vh;
+  margin-top: 2.5vh; 
+  line-height: 2rem;
 }
 
 /* -- About page --*/
+.image-block{
+  text-align: center;
+}
 .image-block img {
+  width: 90%;
   border-radius: 10px;
   margin-top: 1vh;
-  max-width: 50%;
   display: inline;
 
   margin-bottom: 2vh;
@@ -285,4 +289,53 @@ button:hover i {
 
 #p3 {
   z-index: 1;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .mag-section {
+    height: auto;
+  }
+  .magazine {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .magazine button {
+    display: none;
+  }
+  .magazine .book,
+  .magazine .book .paper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1 !important;
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .magazine .book .paper > div {
+    margin-bottom: 20px;
+    position: relative;
+    transform: none !important;
+  }
+  .magazine .book .paper .back-content {
+    transform: none !important;
+  }
+
 }
