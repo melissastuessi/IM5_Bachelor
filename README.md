@@ -1,6 +1,6 @@
 # Bachelorarbeit Webseite
 
-Dieses Repository enthält den Code für meine Bachelorarbeit über das Thema "Wie können bedrohte Sprachen durch Digital Empowerment vor dem Aussterben bewahrt werden?". Die Webseite ist als Lehrprojekt konzipiert und umfasst die Bereiche Thesis, Project, About und Kontakt.
+Dieses Repository enthält den Code für die Webseite meiner Bachelorarbeit über das Thema "Wie können bedrohte Sprachen durch Digital Empowerment vor dem Aussterben bewahrt werden?". Die Webseite ist als Lehrprojekt konzipiert und umfasst die Bereiche Thesis, Project, About und Kontakt.
 
 ## Inhalte
 
