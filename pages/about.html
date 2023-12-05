@@ -94,26 +94,65 @@
 
 	</div>
 
+	<div class="container">
+		<div class="section">
+			<div class="col s12 m12">
+				<h1>Kontakt</h1>
+        <p>Du kannst dich gerne bei mir melden!</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Absenden</button>
+        </form>
+
+        <script>
+            function isValidEmail(email) {
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+            }
+
+            function submitForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+
+                if (!isValidEmail(email)) {
+                    alert("Bitte geben Sie eine gültige E-Mail-Adresse ein.");
+                    return;
+                }
+
+    // Der Pfad zur bestaetigung.html ist relativ zum aktuellen Verzeichnis
+	window.location.href = "/pages/bestaetigung.html";
+            }
+        </script>
+		</div>
+
 
 	<!--Footer -->
 
-	<footer class="page-footer cyan darken-4">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Kontaktangaben</h5>
-					<p class="white-text">melissa.stuessi@stud.fhgr.ch</p>
-
-
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container center">
-				© <a class="white-text">Melissa Stüssi</a>
-			</div>
-		</div>
-	</footer>
+    <footer class="page-footer cyan darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Kontaktangaben</h5>
+                    <p class="white-text">melissa.stuessi@stud.fhgr.ch</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © <a class="white-text">Melissa Stüssi</a>
+            </div>
+        </div>
+    </footer>
 
 
 	<!--  Scripts-->
